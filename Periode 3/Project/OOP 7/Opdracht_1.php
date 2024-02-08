@@ -3,13 +3,13 @@
 <?php
 
 class House {
-    public $floor;
-    public $rooms;
-    public $width;
-    public $height;
-    public $depth;
-    public $volume;
-    public $pricePerCubicMeter = 1000; // Assuming a fixed price per m^3
+    private $floor;
+    private $rooms;
+    private $width;
+    private $height;
+    private $depth;
+    private $volume;
+    private $pricePerCubicMeter = 1000; // Assuming a fixed price per m^3
 
     public function __construct($floor, $rooms, $width, $height, $depth) {
         $this->floor = $floor;
